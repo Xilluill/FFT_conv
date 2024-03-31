@@ -1,3 +1,4 @@
+公式渲染有问题,详细报告可见博客https://www.xilluillblog.cn/2024/03/31/FFT%E5%8A%A0%E9%80%9F%E5%8D%B7%E7%A7%AF/
 
 <h1 align = "center">基于NumPy的FFT快速卷积算法</h1>
 
@@ -128,14 +129,6 @@ Y(k)& =\operatorname{DFT}\{y[n]\}  \\
 {}\text{}& =\sum_{m=0}^{N-1}x[m]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkm}\sum_{k=0}^{N-1}h[n]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkn}  \\
 &=X[k]H[k]\
 \end{aligned}
-$$
-$$
-\text{y[n]}& =x[n]®h[n]=\sum_{m=0}^{N-1}x[m]h[((n-m))_N],\quad n=0,1,\cdots,N-1\text{。}  \\
-Y(k)& =\operatorname{DFT}\{y[n]\}  \\
-&=\sum_{k=0}^{N-1}\sum_{m=0}^{N-1}x[m]h[((n-m))_N]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkn} \\
-\text{}& =\sum_{m=0}^{N-1}x[m]\sum_{k=0}^{N-1}h[((n-m))_N]\mathrm{e}^{-\text{j}\frac{2\pi}Nkn}  \\
-{}\text{}& =\sum_{m=0}^{N-1}x[m]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkm}\sum_{k=0}^{N-1}h[n]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkn}  \\
-&=X[k]H[k]
 $$
 
 
