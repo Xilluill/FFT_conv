@@ -1,12 +1,3 @@
----
-layout: date
-title: FFT加速卷积
-date: 2024-03-31 11:05:34
-tags: 图像处理
-categories: 课程复习
-mathjax: true
-headimg: https://bu.dusays.com/2024/03/31/6608c79560d4d.png
----
 
 <h1 align = "center">基于NumPy的FFT快速卷积算法</h1>
 
