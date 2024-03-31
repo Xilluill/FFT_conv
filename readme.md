@@ -130,14 +130,12 @@ Y(k)& =\operatorname{DFT}\{y[n]\}  \\
 \end{aligned}
 $$
 $$
-\begin{aligned}
 \text{y[n]}& =x[n]®h[n]=\sum_{m=0}^{N-1}x[m]h[((n-m))_N],\quad n=0,1,\cdots,N-1\text{。}  \\
 Y(k)& =\operatorname{DFT}\{y[n]\}  \\
 &=\sum_{k=0}^{N-1}\sum_{m=0}^{N-1}x[m]h[((n-m))_N]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkn} \\
 \text{}& =\sum_{m=0}^{N-1}x[m]\sum_{k=0}^{N-1}h[((n-m))_N]\mathrm{e}^{-\text{j}\frac{2\pi}Nkn}  \\
 {}\text{}& =\sum_{m=0}^{N-1}x[m]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkm}\sum_{k=0}^{N-1}h[n]\mathrm{e}^{-\mathrm{j}\frac{2\pi}Nkn}  \\
-&=X[k]H[k]\
-\end{aligned}
+&=X[k]H[k]
 $$
 
 
