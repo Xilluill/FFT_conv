@@ -131,6 +131,7 @@ Y(k)& =\operatorname{DFT}\{y[n]\}  \\
 $$
 
 
+
 ​	测试算法时做的实验均为灰度图计算，后续实验将在三通道*RGB*彩色图上进行实验。
 
 <div align=center><img src="https://bu.dusays.com/2024/03/31/660843d53ebbd.png" alt="image-20240308011920511" width="400px" /><div align = "center"><i>图 3 频域相乘结果图</i>
