@@ -118,6 +118,7 @@ def conv2d_numpy(input_data, kernel, stride=1, padding=0):
 ### 3.5 NumPy实现的频域加速卷积
 
 ​	根据公式可以推导出频域相乘可以代替时域卷积。但是值得注意的是，在离散信号中，频域相乘对应的是时域**循环卷积**，这同样适用于二维图像。
+
 $$
 \begin{aligned}
 \text{y[n]}& =x[n]®h[n]=\sum_{m=0}^{N-1}x[m]h[((n-m))_N],\quad n=0,1,\cdots,N-1\text{。}  \\
@@ -128,6 +129,7 @@ Y(k)& =\operatorname{DFT}\{y[n]\}  \\
 &=X[k]H[k]\
 \end{aligned}
 $$
+
 
 ​	测试算法时做的实验均为灰度图计算，后续实验将在三通道*RGB*彩色图上进行实验。
 
